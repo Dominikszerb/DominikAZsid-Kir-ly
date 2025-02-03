@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>Rezsiköltség</title>
+</head>
+<body>
+    <h1>Rezsiköltség kalkulátor</h1>
+    <form id="rezsi-form"></form>
+    <label for = "aramfogyasztas">Havi áramfogyasztás (0-25000 kWh): </label> <br>
+    <input type="number" id="aramfogyasztas" min="0" max="25000" required> <br>
+    <label for = "gazfogyasztas">Havi gazfogyasztás (0-500 m3): </label> <br>
+    <input type="number" id="gazfogyasztas" min="0" max="500" required> <br>
+    <label for = "vizfogyasztas">Havi vízfogyasztás (0-30 m3): </label> <br>
+    <input type="number" id="vizfogyasztas" min="0" max="30" required> <br>
+    <label for = "kozoskoltseg">Közös költség: (6000-22000 Ft) </label> <br>
+    <input type="number" id="kozoskoltseg" min="6000" max="22000" required> <br>
+    <button type="button" id="kalkulacio">kalkuláció</button> 
+    <h2>Eredmények</h2>
+    <div id="eredmenyek"></div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
